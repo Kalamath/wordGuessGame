@@ -1,0 +1,58 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+            <source src="assets/images/feelingstarry.mp4" type="video/mp4">
+        </video>
+
+<header>
+	<div class="row">
+		<div class="col-md-12">
+				<img src="assets/images/SOHLogo.png" class="img-fluid" alt="celebrity">
+				<h6 class="text-center text-white">The Celebrity Guessing Game</h6>
+		</div>
+	</div>
+</header>
+
+<section class="game">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+                <h2 class='text-center'>Press a key to guess the word!</h2>
+                <p id="letterCheck"></p>
+                <div id="gameDisplay"></div>
+                <p id="gameStatus"></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<p class="text-center">Lives left: <span id="lives">7</span></p>
+			</div>
+			<div class="col-md-6">
+				<p class="text-center">Letters Guessed: <span id="guessed"></span></p>
+			</div>
+			<div class="col-md-12">
+				<p class="text-center">Your last guess: <span id="lastGuess"></span></p>
+                <div id="replay">
+                    <a href="SOH.html" class="btn btn-success">play again!</a>
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

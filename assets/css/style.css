@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+	font-size: 22px;
+}
+
+br.brClear {
+	clear: both;
+}
+
+h1, h2 {
+    color: white;
+}
+
+h2.text-center {
+    margin: 0 auto;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+header {
+	margin-bottom: 60px;
+
+} 
+
+header img{
+	width: 250px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+header h1{
+	font-family: monospace;
+}
+
+.img-fluid {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+}
+
+.game p{
+	padding: 12px;
+}
+
+#gameDisplay, #lives, #guessed, #lastGuess, #gameStatus, #letterCheck {
+	color: yellow;
+	text-align: center;
+}
+
+#gameDisplay{
+	margin: 24px 0;
+	font-size: 30px;
+	border-radius: 6px;
+	letter-spacing: 30px;
+}
+
+#mybtn {
+    position: fixed;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+}
+
+.hidden {
+    align-content: center;
+}
+
+/* Video */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
