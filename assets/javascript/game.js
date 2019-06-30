@@ -1,5 +1,5 @@
 function celebrityGame() {
-    var words = ["drake", "trevor noah", "rihanna", ,"scarlett johansson", "brad pitt", "kanye west", "robin williams", "oprah", "meryl streep", "michael jackson", "ellen degeneres", "jamie foxx", "keanu reeves"];
+    var words = ["drake", "trevor noah", "rihanna", "leonardo dicaprio", "scarlett johansson", "brad pitt", "kanye west", "robin williams", "oprah", "meryl streep", "michael jackson", "ellen degeneres", "jamie foxx", "keanu reeves", "arnold schwarzenegger"];
 
     game = {
         solution: words[Math.floor(Math.random() * words.length)],
