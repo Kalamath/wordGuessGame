@@ -1,3 +1,11 @@
+var wins = 0;
+var losses = 0;
+
+function displayWinsLosses () {
+    console.log("Losses: "+losses);
+    console.log("Wins: "+wins)
+}
+
 function celebrityGame() {
     var words = ["drake", "trevor noah", "rihanna", "leonardo dicaprio", "scarlett johansson", "brad pitt", "kanye west", "robin williams", "oprah", "meryl streep", "michael jackson", "ellen degeneres", "jamie foxx", "keanu reeves", "arnold schwarzenegger", "will smith"];
 
@@ -6,7 +14,9 @@ function celebrityGame() {
         reveal: [],
         guessed: [],
         right: [],
-        lives: 7
+        wins: [],
+        losses: [],
+        lives: 5 
     };
 
     var showLives = document.getElementById("lives");
@@ -18,6 +28,8 @@ function celebrityGame() {
     var loseAudio = new Audio('assets/images/LOSER.mp3');
     var winAudio = new Audio('assets/images/WIN.mp3');
     var replay = document.getElementById("replay");
+    var showWins = document.getElementById("wins");
+    var showLosses = document.getElementById("losses");
 
     //check if the letters in solution are in the alphabet, so people don't have to guess numbers/hyphens/spaces
 
@@ -64,6 +76,8 @@ function celebrityGame() {
                     showGame.innerHTML = "<span class=text-danger>" + game.solution + "</span>";
                     loseAudio.play();
                     replay.className = "text-center";
+                    game.losses++;
+                    showLosses.innerHTML = game.losses;
                 }
             } else {
                 // Guess is correct. Show Letter
@@ -85,6 +99,8 @@ function celebrityGame() {
                     showGame.innerHTML = "<span class=text-success>" + game.solution + "</span>";
                     replay.className = "text-center";
                     winAudio.play();
+                    game.wins++;
+                    showWins.innerHTML = game.wins;
                 }
             }
         }
